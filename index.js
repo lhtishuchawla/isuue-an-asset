@@ -62,3 +62,21 @@ server
   .catch(function (error) {
     console.error("Error!", error);
   });
+
+
+  /**
+ * Status Check End Point
+ */
+app.get("/", (req, res) => {
+  res.json({ status: "Stellar Toml APIs are Deployed!!!!!" });
+});
+
+
+/**
+ * Starting Server
+ */
+ const PORT = process.env.PORT || 8080;
+ app.listen(PORT, () => {
+   console.log(`Server is Running Locally on http://localhost:${PORT}`);
+ });
+ 
