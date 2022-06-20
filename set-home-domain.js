@@ -15,7 +15,7 @@ server
     })
       .addOperation(
         StellarSdk.Operation.setOptions({
-          homeDomain: "issue-an-asset.vercel.com",
+          homeDomain: "issue-an-asset.herokuapp.com",
         })
       )
       // setTimeout is required for a transaction
