@@ -1,30 +1,65 @@
+# stellar.toml
+VERSION="2.0.0"
+
 NETWORK_PASSPHRASE="Public Global Stellar Network ; September 2015"
+FEDERATION_SERVER="https://issue-an-asset.herokuapp.com/federation"
+TRANSFER_SERVER="http://issue-an-asset.herokuapp.com/sep6"
+
+TRANSFER_SERVER_SEP0024 = "http://issue-an-asset.herokuapp.com/sep24"
+WEB_AUTH_ENDPOINT = "http://issue-an-asset.herokuapp.com/auth"
+KYC_SERVER = "http://issue-an-asset.herokuapp.com/kyc"
+DIRECT_PAYMENT_SERVER = "http://issue-an-asset.herokuapp.com/sep31"
+QUOTE_SERVER = "http://issue-an-asset.herokuapp.com/sep38"
+
 SIGNING_KEY="GDX5XVUZMEUU2G5T3GYA3YPQRER7BUIXGK7XNVUGKYAYLNE3MJIY5JWS"
 HORIZON_URL="https://horizon-testnet.stellar.org"
 ACCOUNTS=[
 "GDX5XVUZMEUU2G5T3GYA3YPQRER7BUIXGK7XNVUGKYAYLNE3MJIY5JWS",
 "GAWIIROLD7YZDG2UDJXYGVZM4DT5LWGI45PSDPXCRKEHVXLIXJHD22SW"
 ]
-VERSION="2.0.0"
-TRANSFER_SERVER = "http://issue-an-asset.herokuapp.com/sep6"
-TRANSFER_SERVER_SEP0024 = "http://issue-an-asset.herokuapp.com/sep24"
-WEB_AUTH_ENDPOINT = "http://issue-an-asset.herokuapp.com/auth"
-KYC_SERVER = "http://issue-an-asset.herokuapp.com/kyc"
-DIRECT_PAYMENT_SERVER = "http://issue-an-asset.herokuapp.com/sep31"
-QUOTE_SERVER = "http://issue-an-asset.herokuapp.com/sep38"
-FEDERATION_SERVER="https://stellarid.io/federation/"
-
-
-
-[[CURRENCIES]]
-code = "IshuLHT"
-issuer = "GDX5XVUZMEUU2G5T3GYA3YPQRER7BUIXGK7XNVUGKYAYLNE3MJIY5JWS"
-status = "test"
-is_asset_anchored = true
-desc = "Stellar Reference Token (StellarLHT) is an asset issued on testnet and is used as an anchored asset for this reference server for demonstration and testing purposes."
 
 [DOCUMENTATION]
 ORG_NAME = "Stellar Development Foundation"
+ORG_DBA="Organization DBA"
 ORG_URL = "https://stellar.org"
+ORG_LOGO="https://www.domain.com/awesomelogo.png"
 ORG_DESCRIPTION = "The Stellar Development Foundation (SDF) is a non-profit organization whose mission is to create equitable access to the global financial system."
+ORG_PHYSICAL_ADDRESS="123 Sesame Street, New York, NY 12345, United States"
+ORG_PHYSICAL_ADDRESS_ATTESTATION="https://www.domain.com/address_attestation.jpg"
+ORG_PHONE_NUMBER="1 (123)-456-7890"
+ORG_PHONE_NUMBER_ATTESTATION="https://www.domain.com/phone_attestation.jpg"
+ORG_KEYBASE="accountname"
+ORG_TWITTER="orgtweet"
 ORG_GITHUB = "stellar"
+ORG_OFFICIAL_EMAIL="support@domain.com"
+
+[[CURRENCIES]]
+code="IshuLHT"
+issuer="GDX5XVUZMEUU2G5T3GYA3YPQRER7BUIXGK7XNVUGKYAYLNE3MJIY5JWS"
+display_decimals=2
+
+# [[CURRENCIES]]
+# code="BTC"
+# issuer="GAOO3LWBC4XF6VWRP5ESJ6IBHAISVJMSBTALHOQM2EZG7Q477UWA6L7U"
+# display_decimals=7
+# anchor_asset_type="crypto"
+# anchor_asset="BTC"
+# redemption_instructions="Use SEP6 with our federation server"
+# collateral_addresses=["2C1mCx3ukix1KfegAY5zgQJV7sanAciZpv"]
+# collateral_address_signatures=["304502206e21798a42fae0e854281abd38bacd1aeed3ee3738d9e1446618c4571d10"]
+
+# optional extra information for humans
+# Useful place for anchors to detail various policies and required info
+
+###################################
+# Required compliance fields:
+#      name=<recipient name>
+#      addr=<recipient address>
+# Federation Format:
+#        <phone number>*anchor.com
+#        Forwarding supported by sending to: forward*anchor.com
+#           forward_type=bank_account
+#           swift=<swift code of receiving bank>
+#           acct=<recipient account number at receiving bank>
+# Minimum Amount Forward: $2 USD
+# Maximum Amount Forward: $10000 USD
