@@ -3,10 +3,10 @@ var server = new StellarSdk.Server("https://horizon-testnet.stellar.org");
 
 // Keys for accounts to issue and receive the new asset
 var issuingKeys = StellarSdk.Keypair.fromSecret(
-  "SCPOGNL7VR4D6KR2MSB5XUM7WUYPLHQ5R7K46G5JG5U63WG2WCCNDPCZ"
+  "SATU6DCULQGYUUQZZ4SYPY5YFIAPFPTSJ6EXJYOWIBK2ZNXRNP336JCJ"
 );
 var receivingKeys = StellarSdk.Keypair.fromSecret(
-  "SBAYREURVUZIBHDH3VWAUTSGCFWPMKNEKDZD72DSDXHC6NNKAOBJYIQX"
+  "SB2VE73MSC6CZDJHIIJH2KKDSGPVIIVTFHAZTJD2CFUM2HMHLHGJSJEC"
 );
 
 // Create an object to represent the new asset
@@ -49,7 +49,7 @@ server
         StellarSdk.Operation.payment({
           destination: receivingKeys.publicKey(),
           asset: astroDollar,
-          amount: "100",
+          amount: "1000",
         })
       )
       // setTimeout is required for a transaction
