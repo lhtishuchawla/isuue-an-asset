@@ -6,12 +6,12 @@ ACCOUNTS=[
 "GAWIIROLD7YZDG2UDJXYGVZM4DT5LWGI45PSDPXCRKEHVXLIXJHD22SW"
 ]
 VERSION="2.0.0"
-TRANSFER_SERVER = "http://issue-an-asset.vercel.app/sep6"
-TRANSFER_SERVER_SEP0024 = "http://issue-an-asset.vercel.app/sep24"
-WEB_AUTH_ENDPOINT = "http://issue-an-asset.vercel.app/auth"
-KYC_SERVER = "http://issue-an-asset.vercel.app/kyc"
-DIRECT_PAYMENT_SERVER = "http://issue-an-asset.vercel.app/sep31"
-QUOTE_SERVER = "http://issue-an-asset.vercel.app/sep38"
+TRANSFER_SERVER = "http://issue-an-asset.herokuapp.com/sep6"
+TRANSFER_SERVER_SEP0024 = "http://issue-an-asset.herokuapp.com/sep24"
+WEB_AUTH_ENDPOINT = "http://issue-an-asset.herokuapp.com/auth"
+KYC_SERVER = "http://issue-an-asset.herokuapp.com/kyc"
+DIRECT_PAYMENT_SERVER = "http://issue-an-asset.herokuapp.com/sep31"
+QUOTE_SERVER = "http://issue-an-asset.herokuapp.com/sep38"
 FEDERATION_SERVER="https://stellarid.io/federation/"
 
 

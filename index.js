@@ -3,7 +3,7 @@ const app = express();
 const path = require("path");
 const cors = require("cors");
 app.use(cors());
-
+// SEP-1 for serving info using stellar.toml
 app.use(function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header(
@@ -15,7 +15,7 @@ app.use(function (req, res, next) {
 
 app.get("/", (req, res) => {
   res.json({
-    status: "Deployed!!!!!",
+    status: "Deployed on Heroku!!!!!",
   });
 });
 

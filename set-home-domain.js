@@ -23,7 +23,7 @@ server
       .build();
     transaction.sign(issuingKeys);
     return server.submitTransaction(transaction);
-  })
+  }) 
   .then(console.log)
   .catch(function (error) {
     console.error("Error!", error);
