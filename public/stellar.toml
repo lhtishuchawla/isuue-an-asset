@@ -32,7 +32,7 @@ ORG_OFFICIAL_EMAIL="support@domain.com"
 code="IshuLHT"
 issuer="GDX5XVUZMEUU2G5T3GYA3YPQRER7BUIXGK7XNVUGKYAYLNE3MJIY5JWS"
 display_decimals=2
-home_domain="issue-an-asset.herokuapp.com"
+home_domain="aXNzdWUtYW4tYXNzZXQuaGVyb2t1YXBwLmNvbQ=="
 
 # [[CURRENCIES]]
 # code="BTC"
