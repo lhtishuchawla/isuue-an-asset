@@ -2,7 +2,7 @@
 VERSION="2.0.0"
 
 NETWORK_PASSPHRASE="Public Global Stellar Network ; September 2015"
-# FEDERATION_SERVER="https://issue-an-asset.herokuapp.com/federation"
+FEDERATION_SERVER="https://issue-an-asset.herokuapp.com/federation"
 # TRANSFER_SERVER="https://issue-an-asset.herokuapp.com/sep6"
 # TRANSFER_SERVER_SEP0024 = "https://issue-an-asset.herokuapp.com/sep24"
 # WEB_AUTH_ENDPOINT = "https://issue-an-asset.herokuapp.com/auth"
@@ -36,6 +36,15 @@ status="live"
 is_asset_anchored=true
 anchor_asset_type="crypto"
 desc="The Stellar Development Foundation (SDF) is a non-profit organization whose mission is to create equitable access to the global financial system."
+
+
+# Who is the owner of the server
+[[PRINCIPALS]]
+name="Ishu Chawla"
+email="ishu@leeewayhertz.com"
+keybase="ishuchawla"
+twitter="ishuchawla"
+
 
 # [[CURRENCIES]]
 # code="BTC"
